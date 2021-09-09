@@ -1,9 +1,9 @@
 <template>
   <ul>
     <li v-for="content in contents" :key="content.id">
-      <!--<nuxt-link :to="`/${content.id}`">-->
+      <nuxt-link :to="`/${content.id}`">
         {{ content.title }}
-      <!--</nuxt-link>-->
+      </nuxt-link>
     </li>
   </ul>
 </template>
