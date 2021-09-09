@@ -28,13 +28,13 @@ export default {
 <!--隠蔽-->
 <script>
 import axios from 'axios'
-export default {
-  async asyncData({$config}) {
+export default{
+  async asyncData({ $config }) {
     const { data } = await axios.get(
-      // your-service-id部分は自分のサービスidに置き換えてください
+      
       'https://koza-kura.microcms.io/api/v1/blog',
       {
-        // your-api-key部分は自分のapi-keyに置き換えてください
+        
         headers: { 'X-API-KEY': $config.apiKey}
       }
     )
