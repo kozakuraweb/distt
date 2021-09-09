@@ -27,7 +27,7 @@ export default {
 
 <!--隠蔽-->
 <script>
-import axios from 'axios'
+import axios from 'axios';
 export default{
   async asyncData({ $config }) {
     const { data } = await axios.get(

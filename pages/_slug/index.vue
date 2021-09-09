@@ -25,16 +25,15 @@ export default {
 
 <!--隠蔽-->
 <script>
-import axios from 'axios'
-
+import axios from 'axios';
 export default {
   async asyncData({ $config,params }) {
     const { data } = await axios.get(
       `https://koza-kura.microcms.io/api/v1/blog/${params.slug}`,
       {
-        headers: { 'X-API-KEY':  $config.apiKey}
+        headers: { 'X-API-KEY': $config.apiKey }
       }
-    )
+    );
     return data
   }
 }
