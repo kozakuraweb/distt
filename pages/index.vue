@@ -24,3 +24,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+li{
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  list-style-type: none;
+  padding: 3px;
+}
+a{
+  text-decoration: none;
+  color:green;
+
+}
+</style>
