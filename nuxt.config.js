@@ -43,11 +43,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  //隠蔽
-  privateRuntimeConfig: {
-    apiKey: API_KEY
-  },
-  publicRuntimeConfig: {
-    apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined
-  },
+ 
 }

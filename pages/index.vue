@@ -8,7 +8,7 @@
   </ul>
 </template>
 
-<!--<script>
+<script>
 import axios from 'axios'
 export default {
   async asyncData() {
@@ -23,25 +23,9 @@ export default {
     return data
   }
 }
-</script>-->
-
-<!--隠蔽-->
-<script>
-import axios from 'axios';
-export default{
-  async asyncData({ $config }) {
-    const { data } = await axios.get(
-      
-      'https://koza-kura.microcms.io/api/v1/blog',
-      {
-        
-        headers: { 'X-API-KEY': $config.apiKey}
-      }
-    )
-    return data
-  }
-}
 </script>
+
+
 
 <style scoped>
 li{
