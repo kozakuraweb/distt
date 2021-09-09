@@ -21,5 +21,5 @@ export default {
     return data
   }
 }
-</script>
+</script>や
 
