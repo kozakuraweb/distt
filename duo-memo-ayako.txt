@@ -1,0 +1,5 @@
+隠蔽成功、microcmsの公式サイト参考にて、
+apikeyをnetlifyの中に設定
+webhookをmicrocmsの中で設定
+により、タイムリーな記事投稿を
+自動でデプロイに初めて成功
