@@ -1,4 +1,17 @@
+//隠蔽
+require('dotenv').config();
+const { API_KEY } = process.env;
+
+
 export default {
+
+  //隠蔽
+  privateRuntimeConfig: {
+    apiKey: API_KEY
+  },
+  publicRuntimeConfig: {
+    apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'duo',
@@ -37,5 +50,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  
 }
